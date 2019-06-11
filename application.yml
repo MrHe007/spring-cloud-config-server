@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 6688
+
+spring:
+  profiles: dev
+  application:
+    name: hello-dev
+---
+server:
+  port: 6699
+
+spring:
+  profiles: test
+  application:
+    name: hello-test
